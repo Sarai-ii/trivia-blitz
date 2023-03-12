@@ -62,11 +62,15 @@ ul, li {
     padding: 6px;
     transition: transform .15s;
 }
-/* 
+.possible:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
 .green {
-    background-color: #0b0;
+    background-color: green;
 }
 
 .red {
     background-color: #e23;
-} */
+}

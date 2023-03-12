@@ -45,8 +45,8 @@ ul, li {
 
 .answers-box {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
     width: 100%;
 }
 

@@ -1,3 +1,8 @@
+a:hover, a:focus, a:visited {
+    color: rgb(236, 141, 157);
+    font-weight: 50px;
+}
+
 body {
     align-items: center;
     border-left: 200px solid #235cc5;
@@ -9,9 +14,8 @@ body {
     min-height: 800px;
 }
 
-h1, h2 {
-    color: #235cc5;
-    font-family: 'Titan One', serif;
+h2 {
+    font-family: Georgia;
 }
 
 p {
@@ -20,8 +24,18 @@ p {
 }
 
 h1 {
+    font-family: 'Titan One', serif;
+    color: #235cc5;
     font-size: 3em;
     margin-bottom: -20px;
+}
+
+img {
+    padding-bottom: 6px ;
+    padding-left: 390px;
+    /* height: 40%; */
+    width: 30%;
+
 }
 
 ul, li {
@@ -43,18 +57,20 @@ ul, li {
     width: 70%;
 }
 
-.answers-box {
+.answers-box, .multiple-choice {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
 }
 
-.binary {
+/* .binary {
+    display: inline-flex;
     grid-template-rows: 100%;
-}
 
-.answers-box > li {
+} */
+
+.answers-box > li, .multiple-choice > li {
     border: 2px solid #fff;
     border-radius: 16px;
     text-align: center;
@@ -62,6 +78,12 @@ ul, li {
     padding: 6px;
     transition: transform .15s;
 }
+
+.answers-box > li:hover, 
+.multiple-choice > li:hover {
+    transform: scale(1.1);
+}
+
 .possible:hover{
     background-color: yellowgreen;
     cursor: pointer;

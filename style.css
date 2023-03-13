@@ -5,6 +5,10 @@ a:hover, a:focus, a:visited {
 
 body {
     align-items: center;
+    background-image: url("https://img.freepik.com/free-vector/colorful-abstract-background_23-2148481496.jpg");
+    background-position:center;
+    background-repeat: round;
+    background-size: 1000px;
     border-left: 200px solid #235cc5;
     border-right: 200px solid #235cc5;
     display: flex;
